@@ -2,6 +2,9 @@
 Intro
 - Guido van Rossum
     - created the Python language
+    - not named after python (snake)
+    - named after "Monty python flying circus"
+    - to point that language could be fun to work with
 
 Everybody
 - what do you want to do next?
