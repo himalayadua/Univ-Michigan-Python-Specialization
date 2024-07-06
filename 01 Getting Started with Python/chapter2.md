@@ -88,3 +88,16 @@ print(v)
 type(v)
 <class 'int'>
 ```
+
+
+# User Input
+special function
+- instructs python to pause and read data from user
+- takes prompt as an input
+    - this is the print string that user sees
+- returns string
+
+```python
+name = input("Who are you?")
+print("Welcome,", name)
+```
