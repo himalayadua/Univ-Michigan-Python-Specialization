@@ -5,6 +5,14 @@ Intro
     - not named after python (snake)
     - named after "Monty python flying circus"
     - to point that language could be fun to work with
+- Eben Upton
+    - Founder, Raspberry Pi
+- Daphne Koller
+    - Founder, Coursera
+    - education is the great equilizer
+    - idea at a Youtube conference
+- Andrew Ng
+    - Co-Founder, Coursera
 
 Everybody
 - what do you want to do next?
@@ -26,5 +34,8 @@ Everybody
     - computers are very good at it
     - humans are bad at it
     - delegate it to computer
--
-    
+
+Vocabulary:
+- Pedagogy
+    - pronounced “peh-duh-gow-jee” 
+    - refers to the method of how teachers teach, in theory and in practice
