@@ -9,4 +9,19 @@ Everybody
     - clean data
     - analyze data
     - find something, think better
-- 
+- software
+    - someone creative enough came up with this
+    - someone thought of every single step that would happen for an app to work
+    - someone coded each of that step
+- program
+    - set of instructions
+    - very verbose
+    - not even tiniest of errors
+        - software says: syntax error
+        - it gives up
+- Text analysis
+    - computers are very good at it
+    - humans are bad at it
+    - delegate it to computer
+-
+    
