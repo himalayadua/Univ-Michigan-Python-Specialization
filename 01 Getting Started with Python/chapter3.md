@@ -139,8 +139,9 @@ Take a number input from user.
 - if the user enters a string(chars) by mistake
     - set the number to -1
 
+
 ```python
-num = input("Enter a number")
+num = input("Enter a number: ")
 try:
     var = int(num)
 except:
