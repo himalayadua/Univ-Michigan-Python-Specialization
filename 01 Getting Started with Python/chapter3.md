@@ -111,4 +111,38 @@ Calculate the max of 2 numbers:
 m = a if a > b else b
 ```
 
+### Handling Exceptions
+Exceptions
+- errors or bug
+- interruption of the program execution
+- must be handled
+`try` and `except`
 
+If you print a variable X before declaring it, you will get an error
+Lets see how we can handle that so that the code doesn't stop due to error:
+```python
+try:
+    print(x)
+except:
+    print('Please declare the variable x first')
+
+print(1)
+
+
+#Please declare the variable x first
+#1
+```
+
+**Example**
+Take a number input from user.
+- convert the input number to INT
+- if the user enters a string(chars) by mistake
+    - set the number to -1
+
+```python
+num = input("Enter a number")
+try:
+    var = int(num)
+except:
+    var = -1
+```
