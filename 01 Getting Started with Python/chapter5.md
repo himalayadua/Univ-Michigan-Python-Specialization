@@ -172,3 +172,4 @@ next_element = next(enumerateShopping)
 
 print(f"Next Element: {next_element}")
 ```
+
