@@ -18,4 +18,50 @@ print(x)
 # 124
 ```
 
- 
+ **Loop through String**
+
+less efficient way
+```python
+i = 0
+car = 'lamborghini'
+while i < len(car):
+    l = car[i]
+    print(l)
+    i += 1
+```
+
+
+More elegant way
+```python
+car = 'lamborghini'
+for l in car:
+    print(l)
+
+
+#output
+# l
+# a
+# m
+# b
+# o
+# r
+# g
+# h
+# i
+# n
+# i
+```
+
+
+**Count number of occurence**
+```python
+car = 'lamborghini'
+count = 0
+
+for l in car:
+    if l == 'i':
+        count += 1
+print(count)
+```
+
+
