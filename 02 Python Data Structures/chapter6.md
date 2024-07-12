@@ -1,5 +1,5 @@
 # Chapter 6
-Strings
+## Strings
 - character data
 - numbers can be treated as string
 - string variable is a list
@@ -78,5 +78,17 @@ print(car[7:9])
 print(car[18:33])
 # dor
 # there's only 20 chars, but there's no error when 33 is mentioned
+```
+
+## Manipulating Strings
+**Concatenation**
+`+` operator
+
+```python
+carBrand = 'lamborghini'
+carModel = 'huracan'
+
+car = carBrand + ' ' + carModel
+print(car)
 ```
 
