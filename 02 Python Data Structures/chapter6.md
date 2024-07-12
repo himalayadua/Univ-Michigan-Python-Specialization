@@ -130,4 +130,21 @@ carBrand.strip([chars])
 
 ![String Functions](./assets/stringFunctions.png)
 
+**Searching in String**
+```python
+carBrand = 'Lamborghini'
+
+pos = carBrand.find("hi")
+print(pos)
+# 7
+
+
+pos = carBrand.find("z")
+print(pos)
+# -1
+
+carBrand.startswith("L")
+# True
+
+```
 
