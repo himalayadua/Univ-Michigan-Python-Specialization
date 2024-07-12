@@ -92,3 +92,19 @@ car = carBrand + ' ' + carModel
 print(car)
 ```
 
+**Compare chars to String**
+`in` operator
+
+```python
+carBrand = 'lamborghini'
+
+'o' in carBrand
+# True
+
+'in' in carBrand
+# True
+
+if 'z' in carBrand:
+    print('Found z in the string')
+
+```
