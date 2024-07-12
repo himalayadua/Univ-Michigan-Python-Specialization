@@ -64,4 +64,19 @@ for l in car:
 print(count)
 ```
 
+**Slicing Strings**
+```python
+car = 'lamborghini aventador'
+
+print(car[0:4])
+# lamb
+# car[4] is not included
+
+print(car[7:9])
+# hi
+
+print(car[18:33])
+# dor
+# there's only 20 chars, but there's no error when 33 is mentioned
+```
 
