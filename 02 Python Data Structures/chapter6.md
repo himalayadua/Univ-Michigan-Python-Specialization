@@ -108,3 +108,26 @@ if 'z' in carBrand:
     print('Found z in the string')
 
 ```
+
+**Functions**
+
+```python
+carBrand = 'Lamborghini'
+
+print(carBrand.lower())
+#lamborghini
+
+print(carBrand.upper())
+#LAMBORGHINI
+
+carBrand.endswith(suffix [, start [, end]])
+
+carBrand.replace(old, new [, count])
+
+carBrand.strip([chars])
+
+```
+
+![String Functions](./assets/stringFunctions.png)
+
+
