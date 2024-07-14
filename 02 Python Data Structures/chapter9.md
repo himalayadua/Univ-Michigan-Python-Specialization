@@ -10,12 +10,33 @@ Collection
     - have key-value pairs
     - no fixed sequence
     - look up using a tag
+    - most powerful data collection
+    - database like operations
 
 
-
+**Dict**
 ```python
+# empty dictionary
+expensive_cars = dict()
+
+# add data into dict
+expensive_cars['Bugatti La Voiture Noire'] = 19000000
+expensive_cars['Rolls-Royce Sweptail'] = 13000000
+expensive_cars['Lamborghini Veneno'] = 4500000
+
+# print
+print(expensive_cars)
 
 ```
+{
+    'Bugatti La Voiture Noire': 19000000,
+    'Rolls-Royce Sweptail': 13000000,
+    'Lamborghini Veneno': 4500000,
+}
+
+
+
+
 ```python
 
 ```

@@ -39,8 +39,15 @@ games_list
 games_list[2]
 # COD1
 
+games_list.append('COD2')
+games_list.append('COD3')
+games_list 
+#['IGI1', 'IGI2', 'COD1', 'COD2', 'COD3']
+```
 
-# you can also use spaces and multiple chars
+
+You can also use spaces and multiple chars to split
+```python
 # Split string on spaces 
 "Think lightly of yourself and deeply of the world".split(" ")
 
