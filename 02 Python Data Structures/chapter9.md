@@ -219,8 +219,12 @@ for word, count in counts.items():
 
 # All done
 print(bigword, bigcount)
-
 ```
+
+### Notes
+> JavaScript was invented by Brendan Eich in 1995
+> co-founded the Mozilla project
+
 ```python
 ```
 ```python
