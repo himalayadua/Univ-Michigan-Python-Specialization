@@ -72,11 +72,37 @@ print(tmp)
 ```
 
 
+### Example
+Print top 10 most common words
 ```python
+name = input("Enter file:")
+handle = open(name, 'r')
+
+# Count word frequency
+counts = dict()
+for line in handle:
+    words =  line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+
+lst = list()
+for k, v in counts.items():
+    new = (v, k)    # we reverse key and value so we can sort on the value
+    lst.append(new)
+
+lst = sorted(lst, reverse=True)
+
+for v, k in lst[:10]:
+    print(k, v)
 
 ```
 
+> John Resig - Inventor of JQuery
+>> "I kept wanting to have these certain utilities to make my development easier"
+>> "just working around sort of like the browser incompatibilities that existed at the time"
 
-```python
 
-```
+> Douglas Crockford - Discovered JavaScript Object Notation (JSON)
+>> "I started with JavaScript. But my first application was facilitating communication between programs written in JavaScript and servers written in Java."
+>> "tried to make the simplest possible specification for how to structure data and put it on the wire. And that ultimately became called JSON"
