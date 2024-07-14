@@ -81,6 +81,7 @@ for ip_address in ip_addresses:
         print(f"IP address {ip_address} contains '67'")
 ```
 IP address 67.123.45.67 contains '67'
+
 IP address 67.89.67.123 contains '67'
 
 
