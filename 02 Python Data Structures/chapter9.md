@@ -151,8 +151,81 @@ print("Most common Indian name:", most_common_name, ", with Count:", max_count)
 Most common Indian name: Vishakha , with Count: 4
 
 
-
+### Loops and Dicts
+For
+- loop through keys
 
 ```python
+vm_servers = {
+    'VM1': 100,
+    'VM2': 50,
+    'VM3': 200,
+    'VM4': 150,
+    'VM5': 80
+}
 
+print(vm_servers.keys())
+# ['VM1', 'VM2', 'VM3', 'VM4', 'VM5']
+
+print(vm_servers.values())
+# [100, 50, 200, 150, 80]
+```
+
+**How do i get both key and value together**
+items()
+```python
+vm_servers = {
+    'VM1': 100,
+    'VM2': 50,
+    'VM3': 200,
+    'VM4': 150,
+    'VM5': 80
+}
+
+for vm,size in vm_servers.items():
+    print("Virtual machine", vm, "is of", size , "GB")
+
+# Virtual machine VM1 is of 100 GB
+# Virtual machine VM2 is of 50 GB
+# Virtual machine VM3 is of 200 GB
+# Virtual machine VM4 is of 150 GB
+# Virtual machine VM5 is of 80 GB
+
+```
+
+### Example
+Count words in a file and return more common word
+```python
+# Get the name of the file and open it
+name = input("Enter file:")
+handle = open(name, 'r')
+
+# Count word frequency
+counts = dict()
+for line in handle:
+    words =  line.split()
+    for word in words:
+        counts[word] = counts.get(word, 0) + 1
+
+
+# Find the most common word
+bigcount = None
+bigword = None
+
+for word, count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigword = word
+        bigcount = count
+
+# All done
+print(bigword, bigcount)
+
+```
+```python
+```
+```python
+```
+```python
+```
+```python
 ```
