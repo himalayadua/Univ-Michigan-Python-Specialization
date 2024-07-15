@@ -211,3 +211,15 @@ print(y)
 ```
 output: ['From:']
 
+
+### Example4
+Fetch the email address from a string
+
+```python
+import re
+x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
+y = re.findall('\S+@\S+', x)
+print(y)
+```
+output: ['Gangadhar.VMO.Shastri@gmail.com']
+
