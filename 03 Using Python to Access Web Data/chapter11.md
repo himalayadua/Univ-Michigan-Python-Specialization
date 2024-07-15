@@ -172,7 +172,42 @@ repeat chars
 - * and +
 - push outwards
 - in both directions
+- matches the largest possible string
+
+**Example**
+- find the section where the string starts with "From:"
+- regex used '^F.+:'
+    - ^F - first char is an F
+    - .+ - one or more chars
+    - last char is a :
+- expected value 'From:'
 
 ```python
-
+import re
+x = 'From: Using the : character'
+y = re.findall('^F.+:', x)
+print(y)
 ```
+problem:
+- output: ['From: Using the :']
+- expected value 'From:'
+
+fix:
+we introduce a new char
+Regex
+- ^ Start of the line
+- . any char
+- * 0 or more times
+- \S match any non-white space chars
+- + one or more times
+- [] is one char
+- `? not greedy`
+
+```python
+import re
+x = 'From: Using the : character'
+y = re.findall('^F.+?:', x)
+print(y)
+```
+output: ['From:']
+
