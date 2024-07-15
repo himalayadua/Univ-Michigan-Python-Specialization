@@ -167,6 +167,11 @@ Analysis:
 - In review 1, the abundance of vowels suggests positive sentiment.
 - In review 2, the lack of vowels (except ‘o’) indicates negative sentiment.
 
+### Greedy matching
+repeat chars
+- * and +
+- push outwards
+- in both directions
 
 ```python
 
