@@ -239,7 +239,8 @@ print(y)
 output: ['Gangadhar.VMO.Shastri@gmail.com']
 
 
-**Other ways to extract domain name**
+### Example5
+**Extract domain name**
 ```python
 x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
 words = x.split()
@@ -251,3 +252,15 @@ pieces = email.split('@')   #   ['Gangadhar.VMO.Shastri', 'gmail.com]
 print(pieces[1])
 ```
 output: 'gmail.com'
+
+
+**Extract domain name using RegEx**
+```python
+import re
+x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
+y = re.findall('@([^ ]*)', x)
+
+print(y)
+```
+output: 'gmail.com'
+
