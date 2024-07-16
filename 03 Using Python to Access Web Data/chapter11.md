@@ -226,13 +226,28 @@ output: ['Gangadhar.VMO.Shastri@gmail.com']
 
 **Fine Tuning String Extraction**
 Parantheses:
-- 
+- not part of match
+- they tell where to start and stop
+- what string to return after extract
 
 ```python
 import re
 x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
-y = re.findall('\S+@\S+', x)
+y = re.findall('^From (\S+@\S+)', x)
 print(y)
 ```
 output: ['Gangadhar.VMO.Shastri@gmail.com']
 
+
+**Other ways to extract domain name**
+```python
+x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
+words = x.split()
+
+email = words[1]        #   Gangadhar.VMO.Shastri@gmail.com
+
+pieces = email.split('@')   #   ['Gangadhar.VMO.Shastri', 'gmail.com]
+
+print(pieces[1])
+```
+output: 'gmail.com'
