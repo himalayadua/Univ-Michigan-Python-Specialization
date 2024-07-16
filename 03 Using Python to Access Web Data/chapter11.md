@@ -223,3 +223,16 @@ print(y)
 ```
 output: ['Gangadhar.VMO.Shastri@gmail.com']
 
+
+**Fine Tuning String Extraction**
+Parantheses:
+- 
+
+```python
+import re
+x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
+y = re.findall('\S+@\S+', x)
+print(y)
+```
+output: ['Gangadhar.VMO.Shastri@gmail.com']
+
