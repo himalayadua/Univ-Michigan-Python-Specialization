@@ -262,5 +262,29 @@ y = re.findall('@([^ ]*)', x)
 
 print(y)
 ```
-output: 'gmail.com'
+output: ['gmail.com']
 
+`'@([^ ]*)'`
+- @ - look through the string until you find an at sign
+- [] is one char
+- [^ ] - match non-blank char
+    - ^ inside [] means every thing but the char after ^
+    - [^ ] means anything but empty space
+- * march many of the chars
+
+
+**Fine-tune the RegEx**
+```python
+import re
+x = 'From Gangadhar.VMO.Shastri@gmail.com Sat Jul 15 09:30:14 2024'
+y = re.findall('^From .*@([^ ]*)', x)
+
+print(y)
+```
+output: ['gmail.com']
+
+
+`'^From .*@([^ ]*)'`
+- ^From = Starting with 'From'
+- .* = any num of chars after that
+- @ = till you reach and at sign
