@@ -288,3 +288,4 @@ output: ['gmail.com']
 - ^From = Starting with 'From'
 - .* = any num of chars after that
 - @ = till you reach and at sign
+
