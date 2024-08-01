@@ -128,4 +128,3 @@ cod_games[0:2] = ['Call of Duty', 'Call of Duty 2']
 Why [0:2] and not [0:1]?
 - remember in slicing, the last value is not included
 - [0:2] means 0 and 1
-

@@ -145,6 +145,4 @@ print(pos)
 
 carBrand.startswith("L")
 # True
-
 ```
-
